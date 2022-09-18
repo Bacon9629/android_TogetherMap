@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edge2"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/alert_journey_detail_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="地點"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/alert_journey_detail_date_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/journey_time_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_journey_detail_name" />
+
+    <ImageView
+        android:id="@+id/alert_journey_detail_gps_img_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        app:layout_constraintEnd_toStartOf="@+id/alert_journey_detail_write_img_bt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+    <ImageView
+        android:id="@+id/alert_journey_detail_share_img_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        app:layout_constraintBottom_toBottomOf="@+id/alert_journey_detail_write_img_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alert_journey_detail_write_img_bt"
+        app:layout_constraintTop_toTopOf="@+id/alert_journey_detail_write_img_bt"
+        app:srcCompat="@drawable/ic_baseline_share_24" />
+
+    <ImageView
+        android:id="@+id/alert_journey_detail_write_img_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        app:layout_constraintBottom_toBottomOf="@+id/alert_journey_detail_gps_img_bt"
+        app:layout_constraintEnd_toStartOf="@+id/alert_journey_detail_share_img_bt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alert_journey_detail_gps_img_bt"
+        app:layout_constraintTop_toTopOf="@+id/alert_journey_detail_gps_img_bt"
+        app:srcCompat="@drawable/ic_baseline_edit_note_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alert_journey_detail_note_recycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_journey_detail_gps_img_bt" />
+
+    <EditText
+        android:id="@+id/alert_journey_detail_message_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:singleLine="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/alert_journey_detail_send_bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_journey_detail_note_recycler" />
+
+    <TextView
+        android:id="@+id/alert_journey_detail_send_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        android:padding="8dp"
+        android:text="傳送"
+        android:textColor="@color/text_button"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/alert_journey_detail_message_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/alert_journey_detail_message_et"
+        app:layout_constraintTop_toTopOf="@+id/alert_journey_detail_message_et" />
+
+    <TextView
+        android:id="@+id/alert_journey_detail_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

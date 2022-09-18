@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.current_trip.journey.JourneyFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/current_journey_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/navigation_journey_trip_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_journey"
+            android:textColor="#FF9800"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation_journey_photo_tv_bt"
+            app:layout_constraintEnd_toStartOf="@+id/navigation_journey_photo_tv_bt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/navigation_journey_photo_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_photo"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation_journey_gps_tv_bt"
+            app:layout_constraintEnd_toStartOf="@+id/navigation_journey_gps_tv_bt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/navigation_journey_trip_tv_bt" />
+
+        <TextView
+            android:id="@+id/navigation_journey_gps_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_gps"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation_journey_friend_tv_bt"
+            app:layout_constraintEnd_toStartOf="@+id/navigation_journey_friend_tv_bt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/navigation_journey_photo_tv_bt" />
+
+        <TextView
+            android:id="@+id/navigation_journey_friend_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_participate"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/navigation_journey_gps_tv_bt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/current_floating_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="@+id/current_journey_recycler"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

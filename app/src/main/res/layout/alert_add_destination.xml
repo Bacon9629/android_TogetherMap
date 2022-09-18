@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="第"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toStartOf="@+id/alert_add_destination_day_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="天"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alert_add_destination_day_et"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/alert_add_destination_day_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="3"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="抵達時間："
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/agagaw24"
+        app:layout_constraintStart_toStartOf="@id/agagaw24"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="："
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/alert_add_destination_hour_et"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/alert_add_destination_hour_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/alert_add_destination_min_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="00"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView23"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/agagaw24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="目的地："
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/alert_add_destination_destination_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/alert_add_destination_destination_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="目的地名稱"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/agagaw24"
+        app:layout_constraintEnd_toStartOf="@+id/alert_add_destination_gps_img_bt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/agagaw24"
+        app:layout_constraintTop_toTopOf="@+id/agagaw24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <TextView
+        android:id="@+id/alert_add_destination_check_tv_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        android:padding="8dp"
+        android:text="確認"
+        android:textColor="@color/text_button"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alert_add_destination_del_tv_bt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alert_add_destination_del_tv_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        android:padding="8dp"
+        android:text="長按刪除"
+        android:textColor="@color/text_button"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/alert_add_destination_check_tv_bt"
+        app:layout_constraintEnd_toStartOf="@+id/alert_add_destination_cancel_tv_bt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alert_add_destination_check_tv_bt"
+        app:layout_constraintTop_toTopOf="@+id/alert_add_destination_check_tv_bt"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/alert_add_destination_cancel_tv_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/item_touch_effect"
+        android:padding="8dp"
+        android:text="取消"
+        android:textColor="@color/text_button"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alert_add_destination_del_tv_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alert_add_destination_del_tv_bt"
+        app:layout_constraintTop_toTopOf="@+id/alert_add_destination_del_tv_bt" />
+
+    <ImageButton
+        android:id="@+id/alert_add_destination_gps_img_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/agagaw24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alert_add_destination_destination_et"
+        app:layout_constraintTop_toTopOf="@+id/agagaw24"
+        app:layout_constraintVertical_bias="0.525"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+    <WebView
+        android:id="@+id/alert_add_destination_web"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/alert_add_destination_check_tv_bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <TextView
+        android:id="@+id/alert_add_destination_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/alert_add_destination_day_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

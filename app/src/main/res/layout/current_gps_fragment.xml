@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.current_trip.gps.GpsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/navigation_gps_trip_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_journey"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation_gps_photo_tv_bt"
+            app:layout_constraintEnd_toStartOf="@+id/navigation_gps_photo_tv_bt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/navigation_gps_photo_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_photo"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation_gps_gps_tv_bt"
+            app:layout_constraintEnd_toStartOf="@+id/navigation_gps_gps_tv_bt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/navigation_gps_trip_tv_bt" />
+
+        <TextView
+            android:id="@+id/navigation_gps_gps_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_gps"
+            android:textColor="#FF9800"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/navigation_gps_friend_tv_bt"
+            app:layout_constraintEnd_toStartOf="@+id/navigation_gps_friend_tv_bt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/navigation_gps_photo_tv_bt" />
+
+        <TextView
+            android:id="@+id/navigation_gps_friend_tv_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_touch_effect"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="@string/bottom_navigation_participate"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/navigation_gps_gps_tv_bt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/current_gps_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:name="com.bacon.baconproject.togethermap.map.ShowMapsFragment"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/current_gps_chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/current_gps_guys_location_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="即時位置" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/current_gps_my_way_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="走過的路徑" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/current_gps_destination_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="目的地" />
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

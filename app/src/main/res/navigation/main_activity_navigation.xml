@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bacon.baconproject.togethermap.main.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_historyListFragment"
+            app:destination="@id/historyListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_journeyFragment"
+            app:destination="@id/journeyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyListFragment"
+        android:name="com.bacon.baconproject.togethermap.main.historylist.HistoryListFragment"
+        android:label="history_list_fragment"
+        tools:layout="@layout/history_list_fragment" >
+        <action
+            android:id="@+id/action_historyListFragment_to_journeyFragment"
+            app:destination="@id/journeyFragment"
+            app:popUpTo="@id/historyListFragment"  />
+    </fragment>
+    <fragment
+        android:id="@+id/journeyFragment"
+        android:name="com.bacon.baconproject.togethermap.main.current_trip.journey.JourneyFragment"
+        android:label="journey_fragment"
+        tools:layout="@layout/current_journey_fragment" >
+        <action
+            android:id="@+id/action_journeyFragment_to_gpsFragment"
+            app:destination="@id/gpsFragment"
+            app:popUpTo="@id/historyListFragment"  />
+        <action
+            android:id="@+id/action_journeyFragment_to_participateFragment"
+            app:destination="@id/participateFragment"
+            app:popUpTo="@id/historyListFragment"  />
+    </fragment>
+    <fragment
+        android:id="@+id/gpsFragment"
+        android:name="com.bacon.baconproject.togethermap.main.current_trip.gps.GpsFragment"
+        android:label="gps_fragment"
+        tools:layout="@layout/current_gps_fragment" >
+        <action
+            android:id="@+id/action_gpsFragment_to_journeyFragment"
+            app:destination="@id/journeyFragment"
+            app:popUpTo="@id/historyListFragment"  />
+        <action
+            android:id="@+id/action_gpsFragment_to_participateFragment"
+            app:destination="@id/participateFragment"
+            app:popUpTo="@id/historyListFragment"  />
+    </fragment>
+    <fragment
+        android:id="@+id/participateFragment"
+        android:name="com.bacon.baconproject.togethermap.main.current_trip.participate.ParticipateFragment"
+        android:label="participate_fragment"
+        tools:layout="@layout/current_participate_fragment" >
+        <action
+            android:id="@+id/action_participateFragment_to_journeyFragment"
+            app:destination="@id/journeyFragment"
+            app:popUpTo="@id/historyListFragment" />
+        <action
+            android:id="@+id/action_participateFragment_to_gpsFragment"
+            app:destination="@id/gpsFragment"
+            app:popUpTo="@id/historyListFragment"  />
+    </fragment>
+</navigation>

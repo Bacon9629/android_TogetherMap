@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/edge.xml" value="0.291" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/edge2.xml" value="0.291" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/ic_arrow_right.xml" value="0.291" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.291" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/ic_my_icon2.xml" value="0.242" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/item_touch_effect.xml" value="0.242" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/rounded_rectangle.xml" value="0.291" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/drawable/textview_button_style.xml" value="0.291" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/activity_login.xml" value="0.3596014492753623" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/activity_main.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/activity_test.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/add_current_journey.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/alert_add_destination.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/alert_choose_add_or_join_journey.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/alert_join_journey.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/alert_journey_item_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/alert_tracking_active.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/current_gps_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/current_journey_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/current_participate_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/current_photo_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/current_trip_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/current_trip_inner_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/fragment_history_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/fragment_maps.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/gps_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/history_list_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/journey_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/main_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/main_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/participate_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/recycler_current_gps_guy.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/recycler_current_journey_item_bottom.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/recycler_current_journey_item_middle.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/recycler_current_journey_item_top.xml" value="0.33" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/recycler_history_list_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/layout/recycler_note_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/qwe43/AndroidStudioProjects/TogetherMap/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.242" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

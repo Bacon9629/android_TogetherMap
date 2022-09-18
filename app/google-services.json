@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124158456996",
+    "project_id": "togethermap-1990c",
+    "storage_bucket": "togethermap-1990c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124158456996:android:7fb8a8d170c4c74ac66231",
+        "android_client_info": {
+          "package_name": "com.bacon.baconproject.togethermap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124158456996-2rd2p3h1898i7urk2uvo5mte2g3is4mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC78dULgs4DpTq7fXWii7DIY-WHjsnW_0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124158456996-2rd2p3h1898i7urk2uvo5mte2g3is4mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

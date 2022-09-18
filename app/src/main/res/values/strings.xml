@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TogetherMap</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_navigation_participate">參加者</string>
+    <string name="bottom_navigation_gps">足跡</string>
+    <string name="bottom_navigation_photo">相簿</string>
+    <string name="bottom_navigation_journey">行程</string>
+    <!--    <string name="default_web_client_id">124158456996-2rd2p3h1898i7urk2uvo5mte2g3is4mf.apps.googleusercontent.com</string>-->
+</resources>
